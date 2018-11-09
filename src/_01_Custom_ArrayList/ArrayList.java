@@ -32,15 +32,10 @@ public class ArrayList<T> {
 	public void insert(int loc, T val) throws IndexOutOfBoundsException {
 		T[] temp = (T[]) new Object[tArray.length + 1];
 		//temp[tArray.length] = val;
-		int temp1 = 0;
 		try {
-
-			for (int i = 0; i < tArray.length; i++) {
-				if (i == loc) {
-					 temp1 = 1;
-					temp[loc] = val;
-				} else {
-					temp[i] = tArray[i + temp1];
+			for (int i = 0; i < temp.length; i++) {
+				if(i < loc) {
+					 
 				}
 			}
 			tArray = temp;
